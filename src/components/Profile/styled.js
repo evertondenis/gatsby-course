@@ -3,13 +3,15 @@ import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const ProfileWrapper = styled.section`
-  color: var(--texts);
+  /* color: var(--texts); */
+  color: #8899a6;
   display: flex;
   flex-direction: column;
 `
 
 export const ProfileLink = styled(AniLink)`
-  color: var(--texts);
+  /* color: var(--texts); */
+  color: #8899a6;
   text-decoration: none;
   transition: color 0.5s;
 
@@ -19,7 +21,8 @@ export const ProfileLink = styled(AniLink)`
   `}
 
   &:hover {
-    color: var(--highlight);
+    /* color: var(--highlight); */
+    color: #1fa1f2;
   }
 `
 
