@@ -14,15 +14,13 @@ export const CommentsWrapper = styled.section`
   }
   #disqus_thread {
     a {
-      /* color: var(--highlight) !important; */
-      color: #1fa1f2 !important;
+      color: var(--highlight) !important;
     }
   }
 `
 
 export const CommentsTitle = styled.h2`
-  /* color: var(--postColor); */
-  color: #fff;
+  color: var(--postColor);
   font-size: 2.1rem;
   font-weight: 700;
   padding-bottom: 2rem;

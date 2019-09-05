@@ -18,8 +18,6 @@ export const MenuBarWrapper = styled.aside`
   width: 3.75rem;
   transition: background 0.5s;
   ${media.lessThan("large")`
-    /* border-top: 1px solid var(--borders); */
-    border-top: 1px solid #38444d;
     bottom: 0;
     flex-direction: row;
     height: auto;
@@ -41,15 +39,13 @@ export const MenuBarLink = styled(AniLink)`
   display: block;
   &.active {
     span {
-      /* color: var(--highlight); */
-      color: #1fa1f2;
+      color: var(--highlight);
     }
   }
 `
 
 export const MenuBarItem = styled.span`
-  /* color: var(--texts); */
-  color: #8899a6;
+  color: var(--texts);
   cursor: pointer;
   display: block;
   height: 3.75rem;
@@ -63,8 +59,7 @@ export const MenuBarItem = styled.span`
     }
   }
   &:hover {
-    /* color: var(--highlight); */
-    color: #1fa1f2;
+    color: var(--highlight);
   }
   &.display {
     ${media.lessThan("large")`
@@ -73,8 +68,7 @@ export const MenuBarItem = styled.span`
   }
   ${media.greaterThan("large")`
     &:hover {
-      /* color: var(--highlight); */
-      color: #1fa1f2;
+      color: var(--highlight);
     }
   `}
   ${media.lessThan("large")`

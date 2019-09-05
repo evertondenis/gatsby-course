@@ -3,22 +3,16 @@ import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const RecommendedWrapper = styled.section`
-  /* border-bottom: 1px solid var(--borders);
+  border-bottom: 1px solid var(--borders);
   border-top: 1px solid var(--borders);
-  background: var(--mediumBackground); */
-  border-bottom: 1px solid #38444d;
-  border-top: 1px solid #38444d;
-  /* background: var(--mediumBackground); */
-  background: #192734;
+  background: var(--mediumBackground);
   display: flex;
 `
 
 export const RecommendedLink = styled(AniLink)`
   align-items: center;
-  /* background: var(--mediumBackground);
-  color: var(--highlight); */
-  background: #192734;
-  color: #1fa1f2;
+  background: var(--mediumBackground);
+  color: var(--highlight);
   display: flex;
   padding: 3rem;
   text-decoration: none;
@@ -30,12 +24,10 @@ export const RecommendedLink = styled(AniLink)`
     font-size: .9rem;
   `}
   &:hover {
-    /* background: var(--borders); */
-    background: #38444d;
+    background: var(--borders);
   }
   &.previous {
-    /* border-right: 1px solid var(--borders); */
-    border-right: 1px solid #38444d;
+    border-right: 1px solid var(--borders);
   }
   &.next {
     justify-content: flex-end;
