@@ -9,11 +9,12 @@ const postsQuery = `{
           slug
         }
         frontmatter {
+          title
+          background
           category
-          data_timestamp: date
+          date_timestamp: date
           date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
           description
-          title
         }
         excerpt(pruneLength: 5000)
       }
@@ -34,7 +35,7 @@ const queries = [
   {
     query: postsQuery,
     transformer: ({ data }) => flatten(data.posts.edges),
-    indexName: "Posts",
+    indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
     settings: {
       attributesToSnippet: ["excerpt:20"],
     },
