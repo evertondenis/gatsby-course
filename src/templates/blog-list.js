@@ -1,4 +1,4 @@
-/* import React from "react"
+import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
@@ -30,6 +30,7 @@ const BlogList = props => {
             },
           }) => (
             <PostItem
+              key={slug}
               slug={slug}
               background={background}
               category={category}
@@ -81,4 +82,3 @@ export const query = graphql`
 `
 
 export default BlogList
- */
