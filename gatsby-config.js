@@ -8,6 +8,7 @@ module.exports = {
     position: `Front End Developer`,
     description: `A blog about frontend developement and other coll stuff.`,
     author: `@myblog`,
+    siteUrl: `https://johndoe.com.br`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -81,6 +82,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
