@@ -25,8 +25,8 @@ const postsQuery = `{
 const flatten = arr =>
   arr.map(({ node: { frontmatter, ...rest } }) => ({
     ...frontmatter,
-    data_timestamp: parseInt(
-      (new Date(frontmatter.data_timestamp).getTime() / 1000).toFixed(0)
+    date_timestamp: parseInt(
+      (new Date(frontmatter.date_timestamp).getTime() / 1000).toFixed(0)
     ),
     ...rest,
   }))
